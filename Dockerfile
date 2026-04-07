@@ -31,8 +31,7 @@ COPY . .
 ENV PORT=8080
 
 # Tell Apache to use 8080 instead of 80.
-# RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
-RUN sed -i 's/80/8080/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
+RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
 
 # Note: This is quite insecure and opens security breaches. See last chapter for hardening ideas.
 # Uncomment at your own risk:
