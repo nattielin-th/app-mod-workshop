@@ -84,15 +84,15 @@ options:
   substitutionOption: ALLOW_LOOSE
   logging: CLOUD_LOGGING_ONLY
 substitutions:
-  _DEPLOY_REGION: europe-west8
-  _AR_HOSTNAME: europe-west8-docker.pkg.dev
+  _DEPLOY_REGION: asia-southeast3
+  _AR_HOSTNAME: asia-southeast3-docker.pkg.dev
   _PLATFORM: managed
   _SERVICE_NAME: php-amarcord
   _EXECUTION_ENVIRONMENT: 'rgc/cloudbuild'
   #_GITHUB_USER: Friends-of-Ricc # change your your own, eg 'gregorio'
-  _GITHUB_USER: palladius # change your your own, eg 'gregorio'
-  _DEVFEST_CITY: pescara
+  _GITHUB_USER: nattielin-th # change your your own, eg 'gregorio'
+  _DEVFEST_CITY: bangkok
 tags:
   - gcp-cloud-build-deploy-cloud-run
   - php-amarcord
-  - ricc-ne-sa-a-tronchi
+  - sandbox
